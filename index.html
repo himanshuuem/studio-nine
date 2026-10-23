@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio Nine — Independent Product Design Studio</title>
+  <meta name="description" content="Studio Nine is a small design and engineering studio that builds calm, fast digital products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Studio Nine home">S<sup>9</sup></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="menu-cta">Start a project</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="kicker reveal">Independent studio · Kolkata → everywhere</p>
+      <h1 class="reveal">We design <span class="outline">calm</span> software for <span class="highlight">busy</span> people.</h1>
+      <p class="hero-copy reveal">Studio Nine is a nine-person team of designers and engineers. We turn messy workflows into products that feel obvious.</p>
+      <div class="stats reveal">
+        <div><strong data-count="48">0</strong><span>products shipped</span></div>
+        <div><strong data-count="12">0</strong><span>countries served</span></div>
+        <div><strong data-count="97" data-suffix="%">0</strong><span>clients who return</span></div>
+      </div>
+      <div class="orb" aria-hidden="true"></div>
+    </section>
+
+    <section id="work" class="section">
+      <h2 class="section-title reveal">Selected work</h2>
+      <div class="work-grid">
+        <article class="case reveal" style="--tint: #ffd166">
+          <p class="case-tag">Fintech · 2026</p>
+          <h3>Ledgerly</h3>
+          <p>Rebuilt onboarding for a small-business accounting app. Sign-up drop-off fell by a third.</p>
+        </article>
+        <article class="case reveal" style="--tint: #06d6a0">
+          <p class="case-tag">Health · 2025</p>
+          <h3>Pulse Clinic</h3>
+          <p>A booking system that lets patients find a slot in under 30 seconds, built to work on 3G.</p>
+        </article>
+        <article class="case reveal" style="--tint: #9b87f5">
+          <p class="case-tag">EdTech · 2025</p>
+          <h3>Gradebook</h3>
+          <p>A grading dashboard for teaching assistants, with keyboard-first review of hundreds of submissions.</p>
+        </article>
+        <article class="case reveal" style="--tint: #ff7a90">
+          <p class="case-tag">Climate · 2024</p>
+          <h3>Canopy</h3>
+          <p>A data-viz platform that tracks urban tree cover, with open data and public APIs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2 class="section-title reveal">What we do</h2>
+      <ol class="service-list">
+        <li class="reveal"><span>01</span><h3>Product strategy</h3><p>Workshops, user interviews and a clear, prioritised roadmap.</p></li>
+        <li class="reveal"><span>02</span><h3>Interface design</h3><p>Design systems, prototypes and accessible, responsive UI.</p></li>
+        <li class="reveal"><span>03</span><h3>Engineering</h3><p>Fast front-ends and reliable APIs, deployed and monitored.</p></li>
+        <li class="reveal"><span>04</span><h3>Care plans</h3><p>Monthly iteration, analytics reviews and performance budgets.</p></li>
+      </ol>
+    </section>
+
+    <section id="process" class="section">
+      <h2 class="section-title reveal">How a project runs</h2>
+      <div class="process">
+        <div class="step reveal"><h3>Week 1</h3><p>Discovery: we sit with your users, not just your stakeholders.</p></div>
+        <div class="step reveal"><h3>Weeks 2–3</h3><p>Prototype: a clickable prototype you can test with real people.</p></div>
+        <div class="step reveal"><h3>Weeks 4–8</h3><p>Build: weekly demos and a staging link from day one.</p></div>
+        <div class="step reveal"><h3>Launch +</h3><p>Measure: we watch the numbers with you and keep improving.</p></div>
+      </div>
+    </section>
+
+    <section class="quote reveal">
+      <blockquote>“They asked better questions in week one than our last agency did in six months.”</blockquote>
+      <p>— Product lead, Ledgerly <span class="note">(fictional client, demo content)</span></p>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <h2>Have something in mind?</h2>
+      <p>Tell us about it. We reply within two working days.</p>
+      <form class="contact-form" novalidate>
+        <label><span>Name</span><input name="name" required autocomplete="name"></label>
+        <label><span>Email</span><input name="email" type="email" required autocomplete="email"></label>
+        <label class="full"><span>Budget</span>
+          <select name="budget" required>
+            <option value="">Choose a range</option>
+            <option>Under ₹5L</option>
+            <option>₹5L – ₹15L</option>
+            <option>₹15L+</option>
+          </select>
+        </label>
+        <label class="full"><span>Project</span><textarea name="project" rows="4" required></textarea></label>
+        <p class="form-status full" role="status"></p>
+        <button type="submit" class="full">Send enquiry →</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Studio Nine is a fictional studio, designed and built by <a href="https://github.com/himanshuuem">Himanshu</a> as a portfolio piece.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
